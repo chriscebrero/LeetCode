@@ -20,6 +20,13 @@ const maxDepth = root => {
 	return (Math.max(left, right) + 1);
 };
 
+    // 3
+ //   / \   <--  + 1
+ //  9  20  // Total: 1
+ //    /  \ <-- + 1
+ //   15   7 <-- Total : 2
+ //          <-- Math.max(1, 2) + 1
+ //          Max Depth = 3
 
 const a = new TreeNode(3);
 const b = new TreeNode(9);
